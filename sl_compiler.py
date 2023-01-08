@@ -142,13 +142,13 @@ class commands():
                 getattr(commands, compiler.command)(compiler.content)
         elif compiler.operator == "!=":
             if compiler.value1 != compiler.value2:
-                getattr(commands, compiler.command)()
+                getattr(commands, compiler.command)(compiler.content)
         elif compiler.operator == ">":
             if compiler.value1 > compiler.value2:
-                getattr(commands, compiler.command)()
+                getattr(commands, compiler.command)(compiler.content)
         elif compiler.operator == "<":
             if compiler.value1 < compiler.value2:
-                getattr(commands, compiler.command)()
+                getattr(commands, compiler.command)(compiler.content)
         else:
             print("Error: Operator not valid")
         

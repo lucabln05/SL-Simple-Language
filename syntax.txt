@@ -1,17 +1,18 @@
 SL Syntax
 
 
+Here is the explanation of each command:
 
-print <message>  # To give Console Output, if you want to print a variable, use $<variable> instead of <message>
+print <message>: This command is used to display a message on the console. The message can be a string of text or a variable. To print a variable, use the syntax $<variable> instead of <message>.
 
-input <message> # To take input from user, if you want to take input in a variable, use $<variable> instead of <message>
+input <message>: This command is used to take input from the user. The message is displayed to the user as a prompt. To store the input in a variable, use the syntax $<variable> instead of <message>.
 
-set <variable> to <value1> <operator> <value2> ...# To set a variable, if value is a variable, use $<variable> instead of <value>
+set <variable> to <value>: This command is used to assign a value to a variable. The value can be a constant or the result of an operation between values or variables. If the value is a variable, use the syntax $<variable> instead of <value>.
 
-get <variable> # To get a variable
+get <variable>: This command is used to retrieve the value of a variable.
 
-calc <value> <operator> <value> # To calculate, if value is a variable, use $<variable> instead of <value>
+calc <value> <operator> <value>: This command is used to perform calculations. The values can be constants or variables. If the value is a variable, use the syntax $<variable> instead of <value>.
 
-when <value> <operator> <value> then <command> # To check if a condition is true, if value is a variable, use $<variable> instead of <value>
+when <value> <operator> <value> then <command>: This command is used to execute a command only if a certain condition is met. The values can be constants or variables. If the value is a variable, use the syntax $<variable> instead of <value>. The <operator> can be any comparison operator such as "==" (equal to), "!=" (not equal to), ">" (greater than), ">=" (greater than or equal to), "<" (less than), or "<=" (less than or equal to).
 
 
