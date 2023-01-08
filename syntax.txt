@@ -1,0 +1,17 @@
+SL Syntax
+
+
+
+print <message>  # To give Console Output, if you want to print a variable, use $<variable> instead of <message>
+
+input <message> # To take input from user, if you want to take input in a variable, use $<variable> instead of <message>
+
+set <variable> to <value1> <operator> <value2> ...# To set a variable, if value is a variable, use $<variable> instead of <value>
+
+get <variable> # To get a variable
+
+calc <value> <operator> <value> # To calculate, if value is a variable, use $<variable> instead of <value>
+
+when <value> <operator> <value> then <command> # To check if a condition is true, if value is a variable, use $<variable> instead of <value>
+
+
