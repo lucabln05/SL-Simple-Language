@@ -152,3 +152,5 @@ class commands():
         else:
             print("Error: Operator not valid")
         
+    def exit(content):
+        exit()

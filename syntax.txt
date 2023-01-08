@@ -15,4 +15,4 @@ calc <value> <operator> <value>: This command is used to perform calculations. T
 
 when <value> <operator> <value> then <command>: This command is used to execute a command only if a certain condition is met. The values can be constants or variables. If the value is a variable, use the syntax $<variable> instead of <value>. The <operator> can be any comparison operator such as "==" (equal to), "!=" (not equal to), ">" (greater than), ">=" (greater than or equal to), "<" (less than), or "<=" (less than or equal to).
 
-
+exit: This command is used to exit the script.
