@@ -1,5 +1,5 @@
 # SL-Simple-Language
-Welcome to Simple Language!
+Welcome to Simple Language(SL)!
 
 This project is a simple programming language that aims to make it easy for beginners to get started with coding. The syntax is similar to MySQL, so if you have experience with that language, you should feel right at home with Simple Language.
 
