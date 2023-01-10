@@ -117,6 +117,7 @@ class commands():
             print("Error: Operator not valid")
 
     def when(content):
+
         # check if value are variables format is if <value> <operator> <value> then <command>
         compiler.value1 = content.split(" ", 1)[0]
         compiler.operator = content.split(" ", 2)[1]
@@ -151,6 +152,26 @@ class commands():
                 getattr(commands, compiler.command)(compiler.content)
         else:
             print("Error: Operator not valid")
+
+    def loop(content):
+        # check if value are variables format is loop <value> <operator> <value> then <command>
+        compiler.value = content.split(" ", 1)[0]
+        compiler.command = content.split(" ", 3)[2]
+        compiler.content = content.split(" ", 3)[3]
+
+        # check if value1 is a variable
+        compiler.value1_variable_check = compiler.value[0]
+        if compiler.value1_variable_check == "$":
+            compiler.value = compiler.value[1:]
+            compiler.value = getattr(compiler, compiler.value)
+
+        # loop compiler.value times
+        for i in range(int(compiler.value)):
+            getattr(commands, compiler.command)(compiler.content)            
+
+        else:
+            print("Error: Operator not valid")
+       
         
     def exit(content):
         exit()
